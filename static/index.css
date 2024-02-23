@@ -126,6 +126,7 @@ a
 .main .cont
 {
     border-radius: 20px;
+    margin-bottom: 10px;
     overflow: hidden;
     position: relative;
 }
