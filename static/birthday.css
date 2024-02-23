@@ -9,7 +9,7 @@ body
     animation: changeColor 5s infinite alternate;
 
     text-overflow: clip;
-    overflow: hidden;
+    overflow-y: scroll;
 }
 
 @keyframes changeColor {
