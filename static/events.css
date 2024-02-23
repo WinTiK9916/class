@@ -12,7 +12,7 @@ body
     background: linear-gradient(270deg, #761f90, #541010, #15135d);
     background-size: 600% 600%;
 
-    animation: AnimationName 3s ease infinite;
+    animation: AnimationName 8s ease infinite;
 }
 
 @keyframes AnimationName {
