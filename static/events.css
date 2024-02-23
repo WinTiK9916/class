@@ -10,17 +10,15 @@ body
 
     text-overflow: clip;
     overflow: hidden;
+    overflow-y: scroll;
 }
 
 @keyframes changeColor {
     0% {
-        background-color: #202020; /* Начальный цвет фона */
-    }
-    50% {
-        background-color: #0f0b1f; /* Промежуточный цвет */
+        background-color: #1a1a1a; /* Начальный цвет фона */
     }
     100% {
-        background-color: #181620; /* Конечный цвет фона */
+        background-color: #1d1d1d; /* Конечный цвет фона */
     }
 }
 
@@ -41,24 +39,25 @@ body
 
 li
 {
-    border-radius: 50px;
-    max-width: 120px;
+    border-radius: 40px;
+    max-width: 200px;
     display: inline-block;
 }
 
 a
 {
     color: #000;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
     text-align: center;
     text-decoration: none;
+    font-size: 12px;
     line-height: 1;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    height: 35px;
+    height: 30px;
 }
 
 #menu
@@ -73,33 +72,22 @@ a
     justify-content: space-around;
 }
 
-@media (max-width: 460px)
+@media (max-width: 400px)
 {
     #menu
     {
         font-size: 10px;
-    }   
-    a
+    }    
+    .main h1
     {
-        color: #000;
-        padding-left: 15px;
-        padding-right: 15px;
-        text-align: center;
-        text-decoration: none;
-        line-height: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        height: 25px;
+        font-size: 28px;
     }
-
 }
 @media (max-width: 320px)
 {
     #menu
     {
-        font-size: 5px;
+        font-size: 6px;
     }    
 }
 
@@ -115,19 +103,31 @@ a
 .main h1
 {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 1px;
 }
 
-.main span
+.main .botter
 {
-    font-weight: 450;
+    font-weight: 550;
+    font-size: 15px;
 }
 
-.main .img
+.events
 {
+    margin-top: 20px;
+}
+
+.content
+{
+    background-color: rgb(255, 216, 216);
+    padding: 15px;
     border-radius: 20px;
-    overflow: hidden;
-    position: relative;
+    margin-bottom: 20px;
+}
+
+.content h1
+{
+    font-size: 30px;
 }
 
 img
@@ -136,17 +136,14 @@ img
     height: auto;
 }
 
-.main .botter
+.img
 {
-    padding: 8px;
-    position: absolute;
-    opacity: 80%;
-    top: 12px;
-    left: 12px;
-    background-color: #fff;
-    color: #000;
-    border-radius: 12px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
 }
+
 
 .d
 {
@@ -156,24 +153,4 @@ img
 .d:hover
 {
     background: rgb(190, 121, 255);
-}
-
-.b
-{
-    background: rgb(255, 182, 216);
-    transition: background 0.2s ease;
-}
-.b:hover
-{
-    background: rgb(255, 121, 161);
-}
-
-.e
-{
-    background: rgb(182, 202, 255);
-    transition: background 0.2s ease;
-}
-.e:hover
-{
-    background: rgb(121, 206, 255);
 }

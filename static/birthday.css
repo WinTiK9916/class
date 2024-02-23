@@ -1,0 +1,158 @@
+body
+{
+    font-family: 'Inter';
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #000000;
+    animation: changeColor 5s infinite alternate;
+
+    text-overflow: clip;
+    overflow: hidden;
+}
+
+@keyframes changeColor {
+    0% {
+        background-color: #1a1a1a; /* Начальный цвет фона */
+    }
+    100% {
+        background-color: #1d1d1d; /* Конечный цвет фона */
+    }
+}
+
+.container
+{
+    display: block;
+    max-width: 490px;
+    margin: auto;
+}
+
+.header
+{
+    display: block;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 8px;
+}
+
+li
+{
+    border-radius: 40px;
+    max-width: 200px;
+    display: inline-block;
+}
+
+a
+{
+    color: #000;
+    padding-left: 60px;
+    padding-right: 60px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 30px;
+}
+
+#menu
+{
+    font-size: 13px;
+    font-weight: 600;
+    list-style: none;
+    margin: auto;
+    padding-left: 0;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 400px)
+{
+    #menu
+    {
+        font-size: 10px;
+    }    
+    .main h1
+    {
+        font-size: 28px;
+    }
+}
+@media (max-width: 320px)
+{
+    #menu
+    {
+        font-size: 6px;
+    }    
+}
+
+.main
+{
+    display: block;
+    margin-top: 15px;
+    background-color: aliceblue;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.main h1
+{
+    margin: 0;
+    margin-bottom: 1px;
+}
+
+.main .botter
+{
+    font-weight: 550;
+    font-size: 15px;
+}
+
+.tbl
+{
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+}
+
+.element
+{
+    display: flex;
+    background-color: rgb(255, 194, 194);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+    flex-direction: column;
+    
+}
+
+.element .data
+{
+    font-weight: 500;
+}
+
+.element .name
+{
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+#this
+{
+    background-color: rgb(168, 159, 255);
+}
+
+.d
+{
+    background: rgb(220, 182, 255);
+    transition: background 0.2s ease;
+}
+.d:hover
+{
+    background: rgb(190, 121, 255);
+}
