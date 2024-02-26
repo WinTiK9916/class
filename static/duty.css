@@ -44,11 +44,12 @@ li
     display: inline-block;
 }
 
+
 a
 {
     color: #000;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 5em;
+    padding-right: 5em;
     text-align: center;
     text-decoration: none;
     font-size: 12px;
@@ -56,7 +57,6 @@ a
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
     height: 30px;
 }
 
@@ -72,24 +72,6 @@ a
     justify-content: space-around;
 }
 
-@media (max-width: 460px)
-{
-    #menu
-    {
-        font-size: 10px;
-    }    
-    .main h1
-    {
-        font-size: 18px;
-    }
-}
-@media (max-width: 320px)
-{
-    #menu
-    {
-        font-size: 6px;
-    }    
-}
 
 .main
 {
@@ -103,26 +85,104 @@ a
 .main h1
 {
     margin: 0;
-    margin-bottom: 1px;
-    font-size: 26px;
+    font-size: 25px;
 }
 
-.main .botter
+.table
 {
-    font-weight: 550;
+    margin-top: 20px;
+    display: grid;
+    padding: 10px;
+    background-color: #46e28c;
+    border-radius: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.element
+{
+    display: flex;
+    padding: 13px;
+    background-color: #b9ffb0;
+    color: #242424;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+@keyframes pulse 
+{
+    0% {
+      background-color: #b4ffa4; /* Начальный цвет фона */
+    }
+    50% {
+      background-color: #ffb3b3; /* Промежуточный цвет фона */
+    }
+    100% {
+      background-color: #b4ffa4; /* Конечный цвет фона */
+    }
+}  
+
+#sp
+{
+    animation: pulse 4s infinite ease;
+}
+
+.head
+{
+    align-self: center;
+    font-weight: 690;
+    font-size: 13px;
+}
+.variant
+{
+    padding-bottom: 5px;
+    font-weight: 800;
+}
+.name
+{
     font-size: 15px;
-}
-
-.main span
-{
     font-weight: 450;
 }
 
-.main .variant
+
+
+@media (max-width: 460px)
 {
-    font-weight: 660;
-    font-size: 18px;
+    #menu
+    {
+        font-size: 10px;
+    }    
+    .main h1
+    {
+        font-size: 20px;
+    }
 }
+@media (max-width: 340px)
+{   
+    .table {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    a
+    {
+        color: #000;
+        padding-left: 2em;
+        padding-right: 2em;
+        text-align: center;
+        text-decoration: none;
+        font-size: 12px;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+    }
+}
+
+
+
 
 .d
 {

@@ -40,15 +40,14 @@ body
 li
 {
     border-radius: 50px;
-    max-width: 120px;
     display: inline-block;
 }
 
 a
 {
     color: #000;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 55px;
+    padding-right: 55px;
     text-align: center;
     text-decoration: none;
     line-height: 1;
@@ -166,14 +165,4 @@ img
 .b:hover
 {
     background: rgb(255, 121, 161);
-}
-
-.e
-{
-    background: rgb(182, 202, 255);
-    transition: background 0.2s ease;
-}
-.e:hover
-{
-    background: rgb(121, 206, 255);
 }
